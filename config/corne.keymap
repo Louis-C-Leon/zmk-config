@@ -26,20 +26,20 @@
                 default_layer { // Layer 0
                         display-name = "QWERTY";
                         bindings = <
-&none &kp Q &kp W      &kp E       &lt 4 R         &kp T      /**/ &kp Y      &kp U            &kp I       &kp O      &kp P    &none
-&none &kp A &mt LGUI S &mt LCTRL D &lt 2 F         &mt LALT G /**/ &mt RALT H &lt 1 J          &mt RCTRL K &mt RGUI L &kp SEMI &none
-&none &kp Z &kp X      &kp C       &lt 3 V         &kp B      /**/ &kp N      &kp M            &kp COMMA   &kp DOT    &kp FSLH &none
-            &lt 5 ESC  &kp TAB     &mt LSHIFT SPACE           /**/            &mt RSHIFT SPACE &kp ENTER   &lt 5 ESC
+&none &kp Q &kp W      &kp E       &lt 4 R              &kp T      /**/ &kp Y      &kp U            &kp I       &kp O      &kp P    &none
+&none &kp A &mt LGUI S &mt LCTRL D &lt 2 F              &mt LALT G /**/ &mt RALT H &lt 1 J          &mt RCTRL K &mt RGUI L &kp SEMI &none
+&none &kp Z &kp X      &kp C       &lt 3 V              &kp B      /**/ &kp N      &kp M            &kp COMMA   &kp DOT    &kp FSLH &none
+            &lt 5 ESC  &kp SPACE   &mt LSHIFT BACKSPACE            /**/            &mt RSHIFT TAB   &kp SPACE   &lt 5 ESC
                         >;
                 };
 
                 left_symbols { // Layer 1
                         display-name = "SYMBOLS";
                         bindings = <
-&none &kp TILDE     &kp GRAVE         &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp HASH    /**/ &trans &trans        &trans         &trans &trans &none
-&none &kp AT_SIGN   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp STAR    /**/ &trans &trans        &kp ESC        &trans &trans &none
-&none &kp BACKSLASH &kp DOUBLE_QUOTES &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp PERCENT /**/ &trans &trans        &trans         &trans &trans &none
-                    &trans            &kp BACKSPACE        &kp BACKSPACE                     /**/        &kp BACKSPACE &kp BACKSPACE  &trans
+&none &kp TILDE     &kp GRAVE         &kp LEFT_BRACE       &kp RIGHT_BRACE       &kp HASH    /**/ &trans &trans    &trans  &trans &trans &none
+&none &kp AT_SIGN   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp STAR    /**/ &trans &trans    &kp ESC &trans &trans &none
+&none &kp BACKSLASH &kp DOUBLE_QUOTES &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp PERCENT /**/ &trans &trans    &trans  &trans &trans &none
+                    &trans            &trans               &kp ENTER                         /**/        &kp ENTER &trans
                         >;
                 };
 
@@ -74,7 +74,7 @@
                 };
 
                 other { // Layer 5
-                    display-name = "FN/MEDIA";
+                    display-name = "OTHER";
                     bindings = <
 &none &kp F1 &kp F2 &kp F3               &kp F4               &kp F5  /**/ &kp F6  &kp F7            &kp F8           &kp F9     &kp F10 &none
 &none &trans &trans &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp F11 /**/ &kp F12 &kp C_VOLUME_DOWN &kp C_VOLUME_UP  &kp C_MUTE &trans  &none
